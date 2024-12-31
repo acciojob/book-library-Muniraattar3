@@ -1,59 +1,52 @@
 body {
-    background-color: #f8f8f8; /* Light gray background */
+    background-color: #f8f8f8;
     font-family: Arial, sans-serif;
-    margin: 10;
-    padding: 20px;
 }
 
-/* Book Library Container */
 .book-library {
-    background-color: #ffffff; /* White background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Responsive layout */
-    max-width: 1200px;
-    margin: auto;
-    text-align: center; /* Center the heading */
-}
-
-.book-library h1 {
-    color: #333; /* Darker color for the heading */
-    margin-bottom: 20px;
-}
-
-/* Individual Book Block */
-.book {
     background-color: #ffffff;
-    border: 1px solid #ddd; /* Light border */
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
     border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-    margin: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.author{
-	color:#777777;
-}
-.price-block{
-	color:white;
-	background-color: #2ecc71;
-	width: 100%;
-}
-/* Book Image */
-.book-image {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Book Title */
-.book-title {
-    font-size: 1.2em;
-    color: #333; /* Darker color for title */
-    margin-bottom: 5px;
+.book {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.book:last-child {
+    border-bottom: none;
+}
+
+.book img {
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.book h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.book .author {
+    color: #777;
+    margin: 5px 0;
+}
+
+.book .price-block {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
 }
